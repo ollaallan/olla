@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#studies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Students"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Fname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Fname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Lname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Lname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#staffId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#staffId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#studentId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#studentId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Students"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#CSModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#CSModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#MathModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#MathModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Students -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Students">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#CS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#CS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#CS3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#CS3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Lec1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Lec1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Lecturer"/>
+        <teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#CS1"/>
+        <teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#CS3"/>
+        <Fname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fadi</Fname>
+        <Lname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lomie</Lname>
+        <staffId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</staffId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Lec2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Lec2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Lecturer"/>
+        <teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#MATH1"/>
+        <teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#MATH3"/>
+        <Fname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hadi</Fname>
+        <Lname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forie</Lname>
+        <staffId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</staffId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#MATH1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#MATH1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#MATH3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#MATH3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Stud1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Stud1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Students"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#CS1"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#MATH1"/>
+        <Fname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olla</Fname>
+        <Lname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lola</Lname>
+        <studentId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</studentId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Stud2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Stud2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Students"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#CS3"/>
+        <studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#MATH3"/>
+        <Fname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antoni</Fname>
+        <Lname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anononon</Lname>
+        <studentId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</studentId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#CSModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Lecturer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#MathModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/3/untitled-ontology-6#Students"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
